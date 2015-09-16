@@ -28,7 +28,6 @@ public class Car
     /**
      * Simulates driving the car a distance and reduces the amount of fuel in the tank
      *
-     *
      * @pre        specified distance cant result in consumption of more gas than is available 
      *            (what the method assumes about the method's parameters and class's state)
      * @post    postconditions for the method
@@ -36,10 +35,20 @@ public class Car
      * @param    y    description of parameter y
      * @return    description of the return value
      */
-    public int sampleMethod(int y)
+    public void drive(double distance)
     {
-        // put your code here
-        return x+y;
+        fuelInTank -= distance / fuelEfficiency; 
     }
+    public double getGasInTank()
 
+    {
+        
+    return fuelInTank;    
+  
+    }
+    
+    public void addGas(double gallonsOfGas)
+    {
+        fuelInTank += gallonsOfGas;
+    }
 }
