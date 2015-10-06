@@ -12,7 +12,10 @@ import javax.swing.JComponent;
 public class CityscapeComponent extends JComponent
 {
     // define the objects in your Cityscape as instance variables
-    // ...
+
+   
+        
+    
     
     
     
@@ -31,7 +34,11 @@ public class CityscapeComponent extends JComponent
         
         // invoke the draw method on each object in your Cityscape
         // ...
+        Building building1 = new Building(0,0);
+        int x = getWidth() - 60;
+        int y = getHeight() - 30;
         
+        building1.draw(g2);
         
     }
     
