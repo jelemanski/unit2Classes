@@ -39,6 +39,7 @@ public class CityscapeComponent extends JComponent
         int y = getHeight() - 30;
         
         building1.draw(g2);
+
         
     }
     

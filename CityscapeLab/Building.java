@@ -23,20 +23,27 @@ public class Building
  {
      xLeft = x;
      yTop = y;
+     /**
+      * 
+      *Constructs a building with a given top left corner.
+      *@param x the x-coordinate of the top-left corner
+      *@param y the y-coordinate of the top-left corner
+      */
     }
     
     public void draw(Graphics2D g2)
     {
         Rectangle frame = new Rectangle(100,100,200,200);
-        Rectangle door = new Rectangle();
+        //Rectangle door = new Rectangle(180,100,125,200);
         
         g2.setColor(Color.RED);
         g2.fill(frame);
-        
+        //g2.setColor(Color.black);
+        //g2.fill(door);
         
         
         g2.draw(frame);
-        
+        //g2.draw(door);
     }
 }
  
